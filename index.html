@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table,tr,td{
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <!-- student Form -->
+  <h1>STUDENT FORM</h1>
+    <table>
+    <tr>
+      <th>Name</th> <td><input type="text" placeholder="Enter your Name" id="NAme"></td>
+    </tr>
+
+    <tr>
+      <td>Age</td> <td><input type="number" placeholder="Enter your age" id="age"></td>
+    </tr>
+
+    <tr>
+      <td>Course</td>
+      <td><select name="" id="Course">
+        <option value="python" >python</option>
+        <option value="Sql">Sql</option>
+        <option value="Java">Java</option>
+        <option value="C++">C++</option>
+      </select></td>
+    </tr>
+
+    <tr>
+      <td>Gender</td> 
+      <td><select name="" id="Gender">
+        <option value="Male" >Male</option>
+        <option value="Female">Female</option>
+      </select></td>
+    </tr>
+    </tr>
+    <tr>
+      <td>Email</td> <td><input type="text" placeholder="Enter your Email" id="Email"></td>
+    </tr>
+
+    <tr style="text-align: center;">
+      <td colspan="2"><button id="btn">Save</button></td>
+    </tr>
+
+  </table>
+<!-- Bio Data -->
+<table style="margin-top: 50px;" id="table">
+  <tr>
+    <td>Name</td><td>Age</td><td>Course</td><td>Gender</td><td>E-mail</td><td>Action</td>
+  </tr>
+  <tr>
+    <td>Ajay</td> <td>52</td> <td>python</td> <td id="sgender">Male</td> <td>ajayjest2@gmail.com</td> <td>Delete</td>
+
+  </tr>
+</table>
+
+  <script src="./script.js"> </script>
+</body>
+</html>
