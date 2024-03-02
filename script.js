@@ -42,12 +42,17 @@ btn.addEventListener("click",function(){
  
 btn.addEventListener("click",function(){
   var td=document.createElement("td")
-  td.innerHTML=Email.value+"<td onclick="+"deleteitem(event)"+">Delete</td>"
+  td.textContent=Email.value
+  table.append(td)
+
+  var td=document.createElement("td")
+ td.innerHTML='<button onclick="deleteItem(event)">Delete</button>'
  table.append(td)
 })
   
-var newRow = document.createElement("tr");
-table.append(newRow);
+function deleteitem(event){
+      event.target.parentElement.remove()
+    }
 
   
     
